@@ -4,7 +4,7 @@ This is my personal 3D portfolio — a simple site to showcase my real-time work
 
 Built using React, Three.js (via @react-three/fiber), Vite, and plain CSS. 
 
-Visit here: [Live Site](https://Advaith1509.github.io/3d-personal-website)
+Visit here: [Live Site](https://Advaith1509.github.io/portfolio-website)
 
 ## Getting Started
 
