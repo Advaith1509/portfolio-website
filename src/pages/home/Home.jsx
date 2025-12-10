@@ -42,10 +42,10 @@ export const Home = () => {
       <TextContainer>
         <Name>Advaith </Name>
         <Position>
-          <div className="text first" aria-label="Computer Science 3" style={{ fontSize: "5rem", fontWeight: "1000" }}>
+          <div className="text first" aria-label="Computer Science 3">
             {produceSpans("Moholkar")}
           </div>
-          <div className="text second" aria-label="Computer Science 3" style={{ fontSize: "5rem", fontWeight: "1000" }}>
+          <div className="text second" aria-label="Computer Science 3">
             {produceSpans("Moholkar")}
           </div>
         </Position>

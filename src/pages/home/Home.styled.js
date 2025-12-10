@@ -103,6 +103,8 @@ export const Position = styled(PageHeaderStyled)`
   color: ${blue["50"]};
   cursor: default;
   .text {
+    font-size: 5rem;
+    font-weight: 1000;
     span {
       display: inline-block;
       will-change: transform;
@@ -116,14 +118,19 @@ export const Position = styled(PageHeaderStyled)`
       top: 2%;
       left: 0;
       span {
+        display: inline-block;
+        will-change: transform;
+        transform-style: preserve-3d;
         transform-origin: bottom;
-        transform: translate3d(0, 100%, 0) rotateX(-90deg);
         animation: ${textRotate2} 2.4s infinite alternate;
       }
     }
   }
   @media screen and (max-width: 1204px) {
     font-size: ${typeScale.title};
+    .text {
+      font-size: 4rem; 
+    }
   }
   @media screen and (max-width: 480px) {
     font-size: ${typeScale.subtitle};
@@ -131,6 +138,9 @@ export const Position = styled(PageHeaderStyled)`
     display: flex;
     justify-content: center;
     align-items: center;
+    .text {
+      font-size: 3rem; /* Mobile Font Size */
+    }
     .text.second {
       left: auto;
     }

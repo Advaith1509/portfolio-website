@@ -16,7 +16,8 @@ const ParticlesBackground = () => {
 
         const createParticles = () => {
             particles = [];
-            const particleCount = Math.min(window.innerWidth * 0.2, 1500); // Responsive count increased
+            // Optimize count: High for desktop, Low for mobile
+            const particleCount = window.innerWidth < 768 ? 400 : 1500;
             for (let i = 0; i < particleCount; i++) {
                 particles.push({
                     x: Math.random() * canvas.width,
