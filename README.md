@@ -4,7 +4,6 @@ An immersive, interactive 3D personal website built to showcase my projects and 
 
 **Live Site:** [https://Advaith1509.github.io/portfolio-website](https://Advaith1509.github.io/portfolio-website)
 
-Visit here: [Live Site](https://Advaith1509.github.io/portfolio-website)
 ---
 
 ## ***Tech Stack***
@@ -33,7 +32,7 @@ This project is built with a modern frontend stack focused on performance and 3D
     *   **Minecraft/Pixel Art Theme**: Unified design language across project thumbnails and favicons.
     *   **Dynamic Lighting**: Scene lighting reacts to view (Mobile/Desktop) tweaks.
 
-## 📂 Project Structure
+## ***Project Structure***
 
 ```bash
 src/
@@ -46,7 +45,7 @@ src/
 │   ├── home/           # Landing page with 3D Dog scene
 │   ├── About/          # Skills sphere and bio
 │   └── Projects/       # Project carousel
-└── utils/              # Theme configuration (colors, typograpy)
+└── utils/              # Theme configuration (colors, typography)
 ```
 
 ## ***Getting Started***
