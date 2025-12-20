@@ -84,7 +84,7 @@ export const Contact = () => {
             </a>
 
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/drive/u/2/folders/1e79MGkRGs3wF7pXNhwT8GExcXjG-fol7"
               target="_blank"
               rel="noopener noreferrer"
             >
