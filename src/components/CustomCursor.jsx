@@ -28,7 +28,7 @@ const CursorRoot = styled.div`
   top: 0;
   left: 0;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 10001;
   will-change: transform;
   transform: translate3d(-100px, -100px, 0);
 `;
