@@ -2,17 +2,14 @@ import React, { useState } from "react";
 import {
   AiFillGithub,
   AiFillLinkedin,
-  AiOutlineDownload,
-  AiOutlineInstagram,
   AiOutlineMail,
 } from "react-icons/ai";
 import { Button, Input, Textarea } from "../../components/form";
 import { Page } from "../../components/Page";
-import { blue, green, pink, red, yellow } from "../../utils";
+import { blue, green, yellow } from "../../utils";
 import {
   ContactForm,
   ContactWrapper,
-  DownloadButton,
   IconButton,
 } from "./Contact.styled";
 
@@ -81,17 +78,6 @@ export const Contact = () => {
               <IconButton bg={yellow}>
                 <AiFillGithub size={40} />
               </IconButton>
-            </a>
-
-            <a
-              href="https://drive.google.com/drive/u/2/folders/1e79MGkRGs3wF7pXNhwT8GExcXjG-fol7"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <DownloadButton bg={red} tooltip="Download">
-                <AiOutlineDownload size={40} />
-                <span>Resume</span>
-              </DownloadButton>
             </a>
           </div>
           <Button

@@ -3,13 +3,12 @@ import gsap from "gsap";
 import Flip from "gsap/Flip";
 import React, { useEffect } from "react";
 import { Page } from "../../components/Page";
-import { blue, green, maroon } from "../../utils";
+import { green, maroon } from "../../utils";
 import { Educations, Paragraph, SkillsWrapper, Text } from "./About.styled";
 import { AboutItem } from "./AboutItem";
 import Skills from "./SkillBall";
 import mac from "../../assets/images/mac.png";
 import highschool from "../../assets/images/highschool.jpeg";
-import sos from "../../assets/images/sos.png";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 
@@ -49,9 +48,8 @@ export const About = () => {
       <Page header="About">
         <Text>
           <Paragraph>
-            Hi! I'm Advaith, a third-year B.Tech student at IIT Jodhpur majoring in Computer Science and Engineering (CSE).
-            I’m passionate about Machine Learning, Artifical Intelligence, Computer Vision, and Quantitative Finance.
-            I enjoy solving complex problems using data-driven approaches, from autonomous driving systems to financial risk modeling.
+            Hi! I'm Advaith, a final-year B.Tech student at IIT Jodhpur majoring in Computer Science and Engineering (CSE).
+            I'm passionate about Machine Learning, Artificial Intelligence, and Computer Vision.
           </Paragraph>
           <Educations>
             <AboutItem

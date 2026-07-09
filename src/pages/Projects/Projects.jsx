@@ -9,7 +9,6 @@ export const Projects = () => {
   const ref = useRef(null);
 
   const moveLeft = (e) => {
-    console.log(ref.current.scrollLeft);
     document.querySelector(".wrapper").scrollLeft += 600;
   };
   const moveRight = (e) => {

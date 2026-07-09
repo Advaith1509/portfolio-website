@@ -22,10 +22,11 @@ export const Penguin = (props) => {
   };
 
   useEffect(() => {
-    document.addEventListener("mousemove", (e) => {
+    const handleMouseMove = (e) => {
       const mouseX = e.clientX;
       const mouseY = e.clientY;
       const rekt = document?.getElementById("penguin")?.getBoundingClientRect();
+      if (!rekt) return;
       const anchorX = rekt.left + rekt.width / 2;
       const anchorY = rekt.top + rekt.height / 2;
       let moveX = 0;
@@ -39,7 +40,8 @@ export const Penguin = (props) => {
       ].forEach((eye) => {
         eye.style.transform = `translateX(${moveX}px) translateY(${moveY}px)`;
       });
-    });
+    };
+    document.addEventListener("mousemove", handleMouseMove);
     blushes.forEach((blush) => {
       blush.current.style.opacity = "0";
       blush.current.style.transition = "all 0.15s ease";
@@ -54,6 +56,9 @@ export const Penguin = (props) => {
         eye.style.transition = "opacity 0.15s ease";
       }
     );
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
   }, []);
   return (
     <div

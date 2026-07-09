@@ -1,10 +1,17 @@
+import spectralmotion from "../assets/images/spectralmotion_pixel.png";
 import lanenet from "../assets/images/lanenet_pixel.png";
 import quantsim from "../assets/images/quantsim_pixel.png";
 import smartpricing from "../assets/images/smartpricing_pixel.png";
-import riskassess from "../assets/images/riskassess_pixel.png";
 import gridnav from "../assets/images/grid_pixel.png";
 
 export const projects = [
+  {
+    title: "Spectral Motion Synthesis",
+    description: "Generative video motion from a single still image.",
+    image: spectralmotion,
+    github: "https://github.com/Advaith1509/multiscale_spectral_motion_synthesis",
+    link: "https://youtu.be/3OZHlT5TeKs",
+  },
   {
     title: "LaneNET",
     description: "Deep Learning based enhanced curved lane detection.",
@@ -28,11 +35,5 @@ export const projects = [
     description: "Pathfinding Visualizer and Maze Generator.",
     image: gridnav,
     github: "https://github.com/Advaith1509/Grid-Navigator",
-  },
-  {
-    title: "Financial Risk Assessment",
-    description: "Credit risk scoring model using Ensemble Learning.",
-    image: riskassess,
-    github: "https://github.com/Advaith1509/Financial_Risk_Assessment",
   },
 ];

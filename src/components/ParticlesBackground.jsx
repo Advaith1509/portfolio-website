@@ -57,13 +57,14 @@ const ParticlesBackground = () => {
         createParticles();
         drawParticles();
 
-        window.addEventListener('resize', () => {
+        const handleResize = () => {
             resizeCanvas();
             createParticles();
-        });
+        };
+        window.addEventListener('resize', handleResize);
 
         return () => {
-            window.removeEventListener('resize', resizeCanvas);
+            window.removeEventListener('resize', handleResize);
             cancelAnimationFrame(animationFrameId);
         };
     }, []);

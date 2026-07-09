@@ -19,7 +19,11 @@ export const ExperienceItem = (props) => {
       <div className="date">
         {data.joined} - {data.end}
       </div>
-      <p>{data.bio}</p>
+      <ul>
+        {data.bio.map((point, index) => (
+          <li key={index}>{point}</li>
+        ))}
+      </ul>
     </StyledExperienceItem>
   );
 };

@@ -1,14 +1,32 @@
-import { blue, green } from "../utils";
-import macai from "../assets/images/macai.png"; // Placeholder for University Research
+import { blue, purple } from "../utils";
+import microsoft from "../assets/images/microsoft.png";
+import mac from "../assets/images/mac.png";
 
 export const experiences = [
   {
-    logo: macai,
-    name: "IIT Jodhpur (Research)",
-    joined: "Jan'25",
-    end: "Apr'25",
-    title: "Research Trainee",
-    bio: "LaneNet: Enhanced Curved Lane Detection. Mentored by Dr. Himanshu Kumar. Implemented deep learning approach integrating LaneNet into CLRNet. Improved F1 score by 2.8% on CULane dataset.",
+    logo: microsoft,
+    name: "Microsoft",
+    joined: "May'26",
+    end: "Jul'26",
+    title: "Software Engineering Intern",
+    bio: [
+      "Built a two-tier caching library (in-memory + Redis) in C#/.NET for the Xbox publishing pipeline, cutting P95 latency by 42%.",
+      "Shipped a cache-operations developer portal with live inspection and P50/P95/P99 latency insights.",
+      "Built an AI onboarding agent that auto-generates production-ready cache integration code.",
+    ],
     color: blue,
+  },
+  {
+    logo: mac,
+    name: "IIT Jodhpur",
+    joined: "Feb'26",
+    end: "Present",
+    title: "Undergraduate Researcher",
+    bio: [
+      "Developing physics-informed deep learning for cross-field MRI synthesis (3T → 7T).",
+      "Generating high-fidelity 7T MRI from low-field scans while preserving clinical accuracy and avoiding hallucinated anatomy.",
+      "Advised by Dr. Angshuman Paul.",
+    ],
+    color: purple,
   },
 ];

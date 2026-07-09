@@ -16,6 +16,7 @@ const Skills = () => {
     // Languages
     "Python",
     "C/C++",
+    "C#",
     "SQL",
     "JavaScript",
     "HTML/CSS",
@@ -38,7 +39,9 @@ const Skills = () => {
     "MySQL",
     "Excel",
     "VS Code",
-    "Docker"
+    "Docker",
+    "ASP.NET",
+    "Azure",
   ];
 
   const g = useRef();

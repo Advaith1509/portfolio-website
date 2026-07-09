@@ -66,9 +66,20 @@ export const StyledExperienceItem = styled.div`
       display: none;
     }
   }
-  p {
+  ul {
     display: none;
-    font-size: ${typeScale.text};
+  }
+  li {
+    list-style: none;
+    position: relative;
+    padding-left: 1.1rem;
+    font-size: ${typeScale.paragraph};
+    line-height: 1.4;
+  }
+  li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
   }
 
   &.active {
@@ -76,8 +87,10 @@ export const StyledExperienceItem = styled.div`
     .date {
       display: block;
     }
-    p {
-      display: block;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
     }
 
     .header {
@@ -121,8 +134,8 @@ export const StyledExperienceItem = styled.div`
       font-size: ${typeScale.helperText};
     }
 
-    p {
-      font-size: ${typeScale.paragraph};
+    li {
+      font-size: ${typeScale.helperText};
     }
   }
 
