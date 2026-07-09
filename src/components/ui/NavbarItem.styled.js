@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { blue, typeScale } from "../../utils";
+import { accent, typeScale } from "../../utils";
 
 export const NavbarItem = styled.a`
   font-size: ${typeScale.text};
@@ -16,7 +16,7 @@ export const NavbarItem = styled.a`
   .dot {
     width: 8px;
     height: 8px;
-    background-color: ${blue["60"]};
+    background-color: ${accent["60"]};
     border-radius: 50%;
     position: absolute;
     bottom: -10px;

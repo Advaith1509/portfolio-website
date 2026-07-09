@@ -11,3 +11,4 @@ export const typeScale = {
 };
 
 export const primaryFont = "'Roboto Mono', monospace;";
+export const displayFont = "'Press Start 2P', monospace";

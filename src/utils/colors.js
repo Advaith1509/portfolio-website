@@ -12,6 +12,20 @@ export const blue = {
   100: "#B3DAFE",
   110: "#ECF6FF",
 };
+export const accent = {
+  "00": "#04252b",
+  10: "#073a44",
+  20: "#0a5561",
+  30: "#0e7d8f",
+  40: "#12a5bd",
+  50: "#1cc0da",
+  60: "#2ad4e6",
+  70: "#45dbeb",
+  80: "#6ce4f0",
+  90: "#9eeef5",
+  100: "#c9f5fa",
+  110: "#ecfdff",
+};
 export const maroon = {
   "00": "#1A0000",
   10: "#330000",

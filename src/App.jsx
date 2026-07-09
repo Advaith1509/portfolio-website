@@ -7,10 +7,14 @@ import { Home } from "./pages/home";
 import { Projects } from "./pages/Projects";
 
 import ParticlesBackground from "./components/ParticlesBackground";
+import CustomCursor from "./components/CustomCursor";
+import Intro from "./components/Intro";
 
 function App() {
   return (
     <div className="App">
+      <Intro />
+      <CustomCursor />
       <ParticlesBackground />
       <Navbar>
         <Home />

@@ -1,6 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { PageHeader, PageHeaderStyled } from "../../components/ui";
-import { blue, red, typeScale } from "../../utils";
+import { displayFont } from "../../utils";
 
 export const HomeWrapper = styled.main`
   display: grid;
@@ -26,6 +25,7 @@ export const TextContainer = styled.section`
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
+  perspective: 900px;
   @media screen and (max-width: 1204px) {
     gap: 2.5rem;
   }
@@ -42,113 +42,64 @@ export const TextContainer = styled.section`
 `;
 
 export const Name = styled.h1`
-  font-size: ${typeScale.bigDisplay};
+  font-family: ${displayFont};
+  font-size: 3rem;
   font-weight: bolder;
   margin: 0;
-  background: white;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, #ddd 100%);
-  line-height: 1;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+  color: #fff;
+  transform-style: preserve-3d;
   @media screen and (max-width: 1204px) {
-    font-size: ${typeScale.display};
+    font-size: 2.4rem;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: ${typeScale.headline};
+    font-size: 1.6rem;
     text-align: center;
   }
 `;
 
-const textRotate1 = keyframes`
-0%{
-  transform: translate3d(0, 0%, 0) rotateX(0deg)
-}
-40%{
-  transform: translate3d(0, 0%, 0) rotateX(0deg)
-}
-60%{
-  transform: translate3d(0, -100%, 0) rotateX(-90deg);
-}
-100%{
-  transform: translate3d(0, -100%, 0) rotateX(-90deg);
-}
-`;
-
-const textRotate2 = keyframes`
-0%{
-  transform: translate3d(0, 100%, 0) rotateX(-90deg);
-}
-40%{
-  transform: translate3d(0, 100%, 0) rotateX(-90deg);
-}
-60%{
-  transform: translate3d(0, 0%, 0) rotateX(0deg);
-}
-100%{
-  transform: translate3d(0, 0%, 0) rotateX(0deg);
-}
-`;
-
-export const Position = styled(PageHeaderStyled)`
-  background: unset;
-  line-height: unset;
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: unset;
-  margin-block: 0;
-  margin-inline: 0;
+export const Surname = styled.h1`
+  font-family: ${displayFont};
+  font-size: 3rem;
+  font-weight: bolder;
   margin: 0;
-  padding: 0;
-  position: relative;
-  color: ${blue["50"]};
+  line-height: 1.2;
+  color: var(--accent);
   cursor: default;
-  .text {
-    font-size: 5rem;
-    font-weight: 1000;
-    span {
-      display: inline-block;
-      will-change: transform;
-      transform-style: preserve-3d;
-      transform-origin: bottom;
-      animation: ${textRotate1} 2.4s infinite alternate;
-    }
-    &.second {
-      color: ${red["60"]};
-      position: absolute;
-      top: 2%;
-      left: 0;
-      span {
-        display: inline-block;
-        will-change: transform;
-        transform-style: preserve-3d;
-        transform-origin: bottom;
-        animation: ${textRotate2} 2.4s infinite alternate;
-      }
-    }
-  }
+  transform-style: preserve-3d;
   @media screen and (max-width: 1204px) {
-    font-size: ${typeScale.title};
-    .text {
-      font-size: 4rem; 
-    }
+    font-size: 2.4rem;
   }
   @media screen and (max-width: 480px) {
-    font-size: ${typeScale.subtitle};
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .text {
-      font-size: 3rem; /* Mobile Font Size */
-    }
-    .text.second {
-      left: auto;
-    }
+    font-size: 1.6rem;
+    text-align: center;
   }
 `;
 
-export const AnimatedSpan = styled.span`
-  transition: 0.5s;
-  animation-delay: ${(props) => props.index * 0.05}s !important;
-  padding: ${(props) => (props.letter === " " ? "0.325rem" : null)};
+const letterIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+export const NameBlock = styled.div`
+  transform-style: preserve-3d;
+  will-change: transform;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  .ltr {
+    display: inline-block;
+    will-change: transform;
+    animation: ${letterIn} 0.5s ease backwards;
+  }
+  @media screen and (max-width: 480px) {
+    align-items: center;
+  }
 `;

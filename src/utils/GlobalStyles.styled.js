@@ -5,12 +5,16 @@ import { primaryFont } from "./typography";
 export const GlobalStyles = createGlobalStyle`
 ${normalize()}
 :root {
+  --accent: #2ad4e6;
+  --accent-ink: #04252b;
   font-size: 16px;
   line-height: 24px;
   font-family: ${primaryFont};
-  color-scheme: light dark;
+  color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #1f1f1f;
+  background:
+    radial-gradient(1200px 800px at 80% -10%, rgba(42, 212, 230, 0.06), transparent 60%),
+    #1a1712;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,5 +33,30 @@ ${normalize()}
 body {
   margin: 0;
   min-height: 100vh;
+}
+
+body.custom-cursor,
+body.custom-cursor * {
+  cursor: none !important;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+a {
+  color: var(--accent);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border: 2px solid #1a1712;
 }
 `;
