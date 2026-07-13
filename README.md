@@ -80,3 +80,7 @@ npm run deploy
 This script builds the project (`vite build`) and pushes the `dist` folder to the `gh-pages` branch.
 
 ---
+
+## ***License***
+
+This project is licensed under the MIT License.
