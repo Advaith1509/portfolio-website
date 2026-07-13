@@ -20,6 +20,10 @@ export const Educations = styled.section`
   gap: 0.75rem;
   align-self: start;
   padding-top: 1rem;
+
+  @media screen and (max-width: 720px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const Text = styled.aside`

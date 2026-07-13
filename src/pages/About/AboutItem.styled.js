@@ -53,13 +53,14 @@ export const AboutItemWrapper = styled.div`
   @media screen and (max-width: 720px) {
     width: 70px;
     height: 70px;
+    max-width: 100%;
     .logo {
       min-width: 45px;
       width: 45px;
       height: 45px;
     }
     &.active {
-      width: 300px;
+      width: min(300px, 100%);
       .text {
         overflow-wrap: break-word;
         min-width: unset;

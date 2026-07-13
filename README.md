@@ -31,6 +31,7 @@ This project is built with a modern frontend stack focused on performance and 3D
 *   **Custom Aesthetics**:
     *   **Minecraft/Pixel Art Theme**: Unified design language across project thumbnails and favicons.
     *   **Dynamic Lighting**: Scene lighting reacts to view (Mobile/Desktop) tweaks.
+    *   **Interactive Intro + Mascot Navigation**: A preloaded ring-portal intro transitions into the site, while the mascot-driven navbar collapses into section dots after the home section and provides lightweight contextual hints.
 
 ## ***Project Structure***
 

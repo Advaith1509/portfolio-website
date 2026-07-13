@@ -18,9 +18,9 @@ function App() {
       <ParticlesBackground />
       <Navbar>
         <Home />
+        <About />
         <Projects />
         <Experience />
-        <About />
         <Contact />
       </Navbar>
     </div>

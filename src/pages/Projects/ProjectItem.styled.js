@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { maroon, typeScale } from "../../utils";
+import { accent, typeScale } from "../../utils";
 
 const fadeIn = keyframes`
   0%{ 
@@ -44,10 +44,10 @@ export const Face = styled.div`
   border-radius: 0.5rem;
   transition: all 0.2s ease;
   &.face-2 {
-    background-color: ${maroon["30"]};
+    background-color: ${accent["30"]};
     transform: rotateY(90deg);
     transform-origin: right;
-    box-shadow: -0.6rem 0.6rem 0 ${maroon["00"]};
+    box-shadow: -0.6rem 0.6rem 0 ${accent["00"]};
     .text {
       height: 100%;
       transform: rotateY(180deg);
@@ -58,7 +58,7 @@ export const Face = styled.div`
     }
   }
   &.face-3 {
-    background-color: ${maroon["50"]};
+    background-color: ${accent["50"]};
     transform: rotateX(90deg);
     transform-origin: top;
     .text {
@@ -69,7 +69,7 @@ export const Face = styled.div`
     }
   }
   &.face-1 {
-    box-shadow: 0.6rem 0.2rem 0 ${maroon["00"]};
+    box-shadow: 0.6rem 0.2rem 0 ${accent["00"]};
 
     .img {
       position: absolute;
@@ -98,7 +98,7 @@ export const Face = styled.div`
       }
     }
     &:hover {
-      box-shadow: 0.6rem 0.6rem 0 ${maroon["00"]};
+      box-shadow: 0.6rem 0.6rem 0 ${accent["00"]};
       .content {
         opacity: 1;
         transform: scale(0.8);
