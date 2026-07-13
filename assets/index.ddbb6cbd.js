@@ -332,22 +332,6 @@ a {
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9), 0 0 8px rgba(42, 212, 230, 0.24);
   transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -0.55rem;
-    width: min(96vw, 520px);
-    height: 1px;
-    transform: translateX(-50%);
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(42, 212, 230, 0.58),
-      transparent
-    );
-  }
-
   .mobile-home-item {
     display: none;
   }
@@ -356,10 +340,6 @@ a {
     gap: 2rem;
     padding: 1rem;
     text-shadow: none;
-
-    &::after {
-      display: none;
-    }
 
     .mobile-home-item {
       display: list-item;
